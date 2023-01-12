@@ -1,0 +1,193 @@
+.centerr{
+  text-align: center;
+}
+
+
+.background-sup {
+  height: 100vh;
+  background-color:#141b2d;
+  background-size:100px; 
+  color: rgb(0, 0, 0);
+  overflow: auto;
+  position:relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+.btn-sm {
+  padding-top: 0px;
+  padding-bottom: 50px;
+  font-size: 15px;
+  border-radius: 10px;
+  width:60px;
+  height: 52px;
+}
+.cardSize{
+  width: 12rem;
+}
+
+.btnSize{
+  width: 6rem;
+  height: 0rem;
+  text-align:center;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.bg-setsupervisor1 {
+  background: linear-gradient(0deg, rgba(250, 248, 248, 0.86), rgba(223, 238, 243, 0.86)), url(/public/assets/images/vec4.jpg);
+  background-size:contain;
+  color: rgb(0, 0, 0);
+  overflow: auto;
+  position:relative;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+}
+
+.bg-setsupervisor2 {
+  background: linear-gradient(0deg, rgba(250, 248, 248, 0.86), rgba(223, 238, 243, 0.86)), url(/public/assets/images/vec2.jpg);
+  background-size:contain;
+  color: rgb(0, 0, 0);
+  overflow: auto;
+  position:relative;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+}
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+
+
+.btn-one {
+  color: rgb(0, 0, 0);
+  transition: all 0.3s;
+  position: relative;
+  
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(26, 206, 158, 0.666);
+  border-bottom-color: rgba(23, 194, 206, 0.737);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+
+
+/* 
+========================
+      BUTTON TWO
+========================
+*/
+.btn-two {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative; 
+}
+.btn-two span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+}
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+.btn-three {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}

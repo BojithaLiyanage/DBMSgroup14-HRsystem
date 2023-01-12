@@ -1,0 +1,97 @@
+
+.card{
+    border:none;
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:auto;
+    height:100%;
+    background-color:rgb(212, 195, 195);
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:auto;
+    height:100%;
+    background-color:rgb(135, 164, 207);
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+.fonts{
+    font-size:14px;
+    font-weight: 100;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    color:#0050b3;
+}
+.alotxt1{
+    color:green;
+}
+
+.alotxt2{
+    color:red;
+}
+.det{
+    color:#fff;
+}
+
+.txt1{
+    color:#096dd9;
+}
+
+.txt2{
+    color:#40a9ff;
+}
+
+.modal-body{
+    background-color: #fff;
+}
+.bg-viewuser {
+    height: 100vh;
+    background-color:#141b2d;
+    background-size:100px; 
+    color: rgb(0, 0, 0);
+    overflow: auto;
+    position:relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    text-align: center;
+  }
+
+  .label1{
+    color:#096dd9
+  }
+
+  .select-box2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;  
+    color: #000000;
+  }
+
+  .form_eu{
+    padding: 5px;
+  }

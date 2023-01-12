@@ -1,0 +1,9 @@
+.leave {
+    background: linear-gradient(0deg, rgba(250, 248, 248, 0.86), rgba(223, 238, 243, 0.86)), url(/public/assets/images/vec3.jpg);
+    background-size:contain;
+    color: rgb(0, 0, 0);
+    overflow: auto;
+    position:relative;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
